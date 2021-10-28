@@ -4,11 +4,22 @@ JSnack 3
  Il programma stampa la somma di tutti i numeri inseriti con for
  e opzionalmente con while (edited) 
  */
+
 let somma = 0;
 
  for (let i = 0; i < 5; i++) {
-     const numero = parseInt( prompt('inserisci un numero') );
+    const numero = parseInt( prompt('inserisci un numero') );
     somma += numero;
  }
-
  console.log(somma);
+
+
+ let sum = 0;
+ let count = 0;
+
+ while (count < 5) {
+    const numero = parseInt( prompt('inserisci un numero') );
+    sum += numero;
+    count++;
+ }
+ console.log(sum);
