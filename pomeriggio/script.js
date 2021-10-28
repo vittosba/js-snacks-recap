@@ -8,7 +8,7 @@ btn.addEventListener('click',
         let somma = 0;
         do {
             numb = prompt('inserisci un numero di 4 cifre');
-        } while (numb.length !== 4)
+        } while (numb.length !== 4 || isNaN(numb) )
         
         for (let i = 0; i < numb.length; i++) {
             somma += parseInt(numb[i]);
